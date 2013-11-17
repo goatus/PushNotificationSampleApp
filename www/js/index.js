@@ -68,8 +68,9 @@ var app = {
             case 'registered':
                 if ( e.regid.length > 0 )
                 {
+					$.post('firenear.com/app_login.php',{'u':'goatus@gmail.com','p':'test','k':'test'},function() { alert("sent reg to server")});
                     console.log("Regid " + e.regid);
-                    alert('registration id = '+e.regid);
+                    //alert('registration id = '+e.regid);
                 }
             break;
  
